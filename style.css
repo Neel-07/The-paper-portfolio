@@ -93,4 +93,13 @@ html,body{
     font-size: 22px;
     margin-top: 20px;
     margin-bottom: 20px;
+    font-family: Canopee;
+}
+#elem1 span{
+    background-color: orangered;
+    color:#fff;
+    font-weight: 100;
+    font-size:18px;
+    padding:4px;
+    border-radius: 5px;
 }
