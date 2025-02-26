@@ -1,3 +1,7 @@
+@font-face {
+    font-family: Domaine;
+    src: url(./domaine.ttf);
+}
 *{
     margin:0;
     padding:0;
@@ -14,6 +18,7 @@ html,body{
     width:100vw;
     background-color: #C4BCB3;
     position: relative;
+    overflow-x: hidden;
 }
 
 #nav{
@@ -53,7 +58,7 @@ html,body{
     height:100%;
 }
 #elem2{
-    width:25%;
+    width:30%;
     height:100%;
     padding: 0 20px;
     text-align:center;
@@ -90,16 +95,75 @@ html,body{
 }
 
 #elem1 h4{
-    font-size: 22px;
+    font-size: 24px;
     margin-top: 20px;
-    margin-bottom: 20px;
+    margin-bottom: 10px;
     font-family: Canopee;
 }
-#elem1 span{
+#elem1 h4 span{
     background-color: orangered;
     color:#fff;
+    margin-left:10px;
     font-weight: 100;
     font-size:18px;
     padding:4px;
     border-radius: 5px;
+}
+
+#elem1 p{
+ font-size: 22px;
+ font-family: Domaine;
+ font-weight: 100;
+ color: #656565;
+}
+
+#elem3 h4{
+    font-size: 24px;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    font-family: Canopee;
+}
+#elem3 h4 span{
+    background-color: orangered;
+    color:#fff;
+    margin-left:10px;
+    font-weight: 100;
+    font-size:18px;
+    padding:4px;
+    border-radius: 5px;
+}
+
+#elem3 p{
+ font-size: 22px;
+ font-family: Domaine;
+ font-weight: 100;
+ color: #656565;
+}
+
+#elem2 h2{
+   font-family: canopee;
+   font-size:75px;
+   font-weight:100;
+
+}
+#elem2 h3{
+    font-family: Domaine;
+    font-size:50px;
+    color:#2f2f2f;
+    font-weight:100;
+ }
+#elem2 h6{
+    font-size: 20px;
+    margin: 20px 0;
+}
+#page1 h1{
+    font-size:540px;
+    letter-spacing: -25px;
+    font-family: canopee;
+    font-weight: 100;
+    background-color: #1C1C19;
+    color:#C4BCB3;
+    line-height: 600px;
+    width: 96%;
+    margin-left: 2%;
 }
