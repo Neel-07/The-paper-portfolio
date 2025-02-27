@@ -22,7 +22,7 @@ html,body{
     width:100vw;
     background-color: #C4BCB3;
     position: relative;
-    overflow-x: hidden;
+    overflow: hidden;
 }
 
 #nav{
@@ -173,7 +173,54 @@ html,body{
 }
 
 #page2{
-    height:100vh;
+    height:190vh;
     width:100%;
     background-color: #C4BCB3;
+    display:flex;
+    align-items:center;
+    justify-content: space-between;
+    padding: 50px 10px;
+}
+
+#page2-left{
+ height:100%;
+ width:35%;
+ padding-right:50px;
+ border-right:1px solid #3e3e3e;
+}
+#page2-left h2{
+    font-size:150px;
+    font-family: canopee;
+    line-height:150px;
+    font-weight: 100;
+}
+
+#page2-left h2 span{
+    font-size:210px;
+    font-weight: 900;
+}
+#page2-left img{
+    height:60%;
+    width:100%;
+    object-fit: cover;
+  }
+#page2-left p{
+    font-size:34px;
+    font-family:domaine;
+}
+#page2-right{
+  height:100vh;
+  width:60%;
+  padding: 0 60px;
+}
+#page2-right img{
+    height:53%;
+    width:100%;
+    object-fit: cover;
+}
+#page2-right h1{
+    font-family: canopee;
+    font-size:140px;
+    letter-spacing:-1px;
+    font-weight:100;
 }

@@ -1,7 +1,8 @@
-// const scroll = new LocomotiveScroll({
-//     el: document.querySelector("#main"),
-//     smooth: true,
-// });
+
+const scroll = new LocomotiveScroll({
+    el: document.querySelector('#main'),
+    smooth: true
+});
 
 var tl = gsap.timeline()
 
