@@ -13,8 +13,12 @@ html,body{
     width:100;
 }
 
+#main{
+    background-color: #222;
+    overflow-x:hidden;
+}
 #page1{
-    height:100vh;
+    height:130vh;
     width:100vw;
     background-color: #C4BCB3;
     position: relative;
@@ -166,4 +170,10 @@ html,body{
     line-height: 600px;
     width: 96%;
     margin-left: 2%;
+}
+
+#page2{
+    height:100vh;
+    width:100%;
+    background-color: #C4BCB3;
 }
