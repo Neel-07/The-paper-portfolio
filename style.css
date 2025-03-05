@@ -31,7 +31,7 @@ body {
 }
 
 #nav {
-  position: absolute;
+  position: fixed;
   top: 0;
   left: 0; 
   z-index: 1000;
@@ -52,8 +52,8 @@ body {
 }
 
 #nav h5 {
-  font-size: 18px;
-  font-weight:300;
+  font-size: 17px;
+  font-weight:100;
   font-family: Domaine;
   width: 30%;
   opacity: 0.8;
@@ -89,17 +89,28 @@ body {
   transform: translateX(-5px);
 }
 
+#elems-container {
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
 #elems {
   height: 430px;
   display: flex;
+  width: 250%;
   align-items: center;
   justify-content: space-between;
   padding: 40px 60px;
   padding-top:15vh;
+  transition: transform 0.5s ease-in-out;
 }
 #elem1 {
   width: 30%;
   height: 100%;
+  cursor: pointer;
 }
 #elem2 {
   width: 30%;
@@ -112,21 +123,19 @@ body {
 #elem3 {
   width: 30%;
   height: 100%;
+  cursor: pointer;
 }
 #elem1 #image-div {
-  height: 50%;
-  width: 100%;
-  overflow: hidden;
-}
-#elem2 #image-div {
   height: 60%;
   width: 100%;
   overflow: hidden;
+  border: 1px solid #222;
 }
 #elem3 #image-div {
   height: 60%;
   width: 100%;
   overflow: hidden;
+  border: 1px solid #222;
 }
 #image-div img {
   height: 100%;
@@ -139,14 +148,14 @@ body {
 }
 
 #elem1 h4 {
-  font-size: 24px;
-  margin-top: 20px;
+  font-size: 22px;
+  margin-top: 10px;
   margin-bottom: 10px;
   font-family: Canopee;
 }
 #elem1 h4 span {
-  background-color: orangered;
-  color: #fff;
+  background-color: #c03f13;
+  color: #cfc4c4;
   margin-left: 10px;
   font-weight: 100;
   font-size: 18px;
@@ -155,21 +164,22 @@ body {
 }
 
 #elem1 p {
-  font-size: 22px;
+  font-size: 18px;
   font-family: Domaine;
+  letter-spacing: 0.5px;
   font-weight: 100;
-  color: #656565;
+  color: #232222;
 }
 
 #elem3 h4 {
   font-size: 24px;
-  margin-top: 20px;
+  margin-top: 10px;
   margin-bottom: 10px;
   font-family: Canopee;
 }
 #elem3 h4 span {
-  background-color: orangered;
-  color: #fff;
+  background-color: #c03f13;
+  color: #cfc4c4;
   margin-left: 10px;
   font-weight: 100;
   font-size: 18px;
@@ -178,26 +188,34 @@ body {
 }
 
 #elem3 p {
-  font-size: 22px;
+  font-size: 18px;
   font-family: Domaine;
+  letter-spacing: 0.5px;
   font-weight: 100;
-  color: #656565;
+  color: #232222;
 }
 
 #elem2 h2 {
   font-family: canopee;
-  font-size: 75px;
-  font-weight: 100;
+  font-size: 60px;
+  font-weight: 500;
 }
 #elem2 h3 {
   font-family: Domaine;
-  font-size: 50px;
-  color: #2f2f2f;
+  font-size: 40px;
+  color: rgb(34, 30, 30);
   font-weight: 100;
+  padding: 10px 0;
 }
 #elem2 h6 {
-  font-size: 20px;
+  font-size: 19px;
+  letter-spacing: -0.5px;
+  font-weight:100;
   margin: 20px 0;
+}
+#elem2 h6 span{
+  font-family:canopee;
+  font-weight: 200;
 }
 #page1 h1 {
   font-size: 540px;
