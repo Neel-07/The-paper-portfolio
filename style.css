@@ -153,6 +153,7 @@ body {
   margin-bottom: 10px;
   font-family: Canopee;
 }
+
 #elem1 h4 span {
   background-color: #c03f13;
   color: #cfc4c4;
@@ -196,10 +197,42 @@ body {
 }
 
 #elem2 h2 {
+  position:relative;
+  z-index:2;
   font-family: canopee;
   font-size: 60px;
   font-weight: 500;
 }
+
+.ellipse {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 120%;
+  height: auto;
+  opacity: 0; /* Start hidden */
+  stroke-miterlimit: 10;
+  transition: opacity 0.5s ease-in-out;
+}
+
+/* Makes the ellipse visible on hover */
+.container:hover .ellipse {
+  opacity: 1;
+}
+
+/* Fixes the stroke animation */
+.head.doodle-hover {
+  stroke-dasharray: 1100; /* Total length of the ellipse */
+  stroke-dashoffset: 1100; /* Start with ellipse hidden */
+  transition: stroke-dashoffset 2s ease-in-out;
+}
+
+/* Draws the ellipse fully when hovered */
+.container:hover .head.doodle-hover {
+  stroke-dashoffset: 0;
+}
+
 #elem2 h3 {
   font-family: Domaine;
   font-size: 40px;
@@ -218,15 +251,24 @@ body {
   font-weight: 200;
 }
 #page1 h1 {
-  font-size: 540px;
+  font-size: 530px;
   letter-spacing: -25px;
   font-family: canopee;
   font-weight: 100;
-  background-color: #1c1c19;
   color: #c4bcb3;
   line-height: 600px;
-  width: 96%;
-  margin-left: 2%;
+  text-align: center;
+  padding: 10px 10px;
+  margin-top:20px;
+  
+}
+#header{
+  background-color: #1c1c19;
+  width:96%;
+  height:59vh;
+  display:flex;
+  justify-self:center;
+  align-items: center;
 }
 
 #page2 {
