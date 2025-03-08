@@ -23,11 +23,12 @@ body {
   overflow: hidden;
 }
 #page1 {
-  height: 130vh;
+  height: 120vh;
   width: 100vw;
   background-color: #c4bcb3;
   position: relative;
   overflow: hidden;
+
 }
 
 #nav {
@@ -203,7 +204,11 @@ body {
   font-size: 60px;
   font-weight: 500;
 }
-
+.container{
+  position:relative;
+  display: inline-block;
+  text-align: center;
+}
 .ellipse {
   position: absolute;
   top: 50%;
@@ -225,7 +230,7 @@ body {
 .head.doodle-hover {
   stroke-dasharray: 1100; /* Total length of the ellipse */
   stroke-dashoffset: 1100; /* Start with ellipse hidden */
-  transition: stroke-dashoffset 2s ease-in-out;
+  transition: stroke-dashoffset 0.8s ease-in-out;
 }
 
 /* Draws the ellipse fully when hovered */
@@ -259,8 +264,6 @@ body {
   line-height: 600px;
   text-align: center;
   padding: 10px 10px;
-  margin-top:20px;
-  
 }
 #header{
   background-color: #1c1c19;
@@ -278,7 +281,7 @@ body {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 50px 10px;
+  padding: 0px 20px;
 }
 
 #page2-left {
@@ -288,23 +291,36 @@ body {
   border-right: 1px solid #3e3e3e;
 }
 #page2-left h2 {
-  font-size: 150px;
+  font-size: 6.8vw;
   font-family: canopee;
-  line-height: 150px;
+  line-height: 120px;
+  text-align: center;
   font-weight: 100;
 }
 
 #page2-left h2 span {
-  font-size: 210px;
-  font-weight: 900;
+  font-size: 170px;
+  font-weight: 600;
 }
 #page2-left img {
-  height: 60%;
+  height: 35%;
   width: 100%;
   object-fit: cover;
+  border:1px solid black;
+}
+#page2-left p span{
+  font-size: 12vh;
+  background-color: #1c1c19;
+  color:#c4bcb3;
+  padding:0.5vw;
+  font-family:canopee;
+  float: left;
+  margin-right:10px;
 }
 #page2-left p {
+  margin-top: 4vh;
   font-size: 34px;
+  font-weight: 100;
   font-family: domaine;
 }
 #page2-right {
