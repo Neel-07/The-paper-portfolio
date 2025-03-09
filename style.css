@@ -106,7 +106,7 @@ body {
   justify-content: space-between;
   padding: 40px 60px;
   padding-top:15vh;
-  transition: transform 0.5s ease-in-out;
+  transition: transform 0.8s ease-in-out;
 }
 #elem1 {
   width: 30%;
@@ -275,7 +275,7 @@ body {
 }
 
 #page2 {
-  height: 190vh;
+  height: 145vh;
   width: 100%;
   background-color: #c4bcb3;
   display: flex;
@@ -291,6 +291,9 @@ body {
   border-right: 1px solid #3e3e3e;
 }
 #page2-left h2 {
+  text-decoration: line-through;
+  text-decoration-color: rgba(0, 0, 0, 0.3); /* Lighter line color */
+  text-decoration-thickness: 0.5px;
   font-size: 6.8vw;
   font-family: canopee;
   line-height: 120px;
@@ -303,7 +306,7 @@ body {
   font-weight: 600;
 }
 #page2-left img {
-  height: 35%;
+  height: 40%;
   width: 100%;
   object-fit: cover;
   border:1px solid black;
@@ -319,43 +322,54 @@ body {
 }
 #page2-left p {
   margin-top: 4vh;
-  font-size: 34px;
+  font-size: 2.6vw;
   font-weight: 100;
   font-family: domaine;
 }
 #page2-right {
-  height: 100vh;
-  width: 60%;
+  height: 100%;
+  width: 80%;
   padding: 0 60px;
 }
 #page2-right img {
-  height: 53%;
-  width: 100%;
+  height: 50%;
+  width: 105%;
   object-fit: cover;
+  border: 1px solid black;
 }
 #page2-right h1 {
+  text-decoration: line-through;
+  text-decoration-color: rgba(0, 0, 0, 0.3); /* Lighter line color */
+  text-decoration-thickness: 0.5px;
   font-family: canopee;
-  font-size: 140px;
+  font-size: 7vw;
   letter-spacing: -1px;
   font-weight: 100;
 }
 #page3 {
   padding: 20px;
   position: relative;
-  height: 40vh;
+  height: 20vh;
   background-color: #c4bcb3;
+  display: flex;
 }
 #page3 h1 {
-  font-size: 40px;
-  font-weight: 100;
-  letter-spacing: 10px;
+  font-size: 530px;
+  letter-spacing: -25px;
   font-family: canopee;
+  font-weight: 100;
+  color: #c4bcb3;
+  line-height: 600px;
+  text-align: center;
+  padding: 10px 10px;
+}
+#head{
   background-color: #1c1c19;
-  width: 70%;
-  color: #c4bcc3;
-  margin-left: 2%;
-  padding: 0 20px;
-  line-height: 450px;
+  width:70%;
+  height:59vh;
+  display:flex;
+  justify-self:center;
+  align-items: center;
 }
 #page3 img {
   height: 400px;
