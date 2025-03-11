@@ -4,6 +4,14 @@ const scroll = new LocomotiveScroll({
     smooth: true
 });
 
+scroll.on('scroll', (instance) => {
+    if(instance.scroll.y > 0) {
+      document.querySelector('#nav').classList.add('sticky');
+    } else {
+      document.querySelector('#nav').classList.remove('sticky');
+    }
+  });
+
 var tl = gsap.timeline()
 
 tl.to('#wrapper',{
