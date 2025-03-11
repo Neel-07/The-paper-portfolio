@@ -550,6 +550,42 @@ body {
 #circle:hover h1 {
   transform: translateX(260%);
 }
+
+#banner{
+  width:100%;
+  background-color: #c4bcb3;
+  padding: 20px 30px;
+}
+#banner-wrap{
+  padding: 20px;
+  border-top: 1px solid #2f2f2f;
+  border-bottom: 1px solid #2f2f2f;
+  display: flex;
+  justify-content: space-between;
+  gap:1rem;
+}
+.box{
+  display:flex;
+  align-items: center;
+}
+.box h3{
+  font-family: canopee;
+  font-size: 5vw;
+  font-weight: 100;
+}
+.box p{
+  font-family: Domaine;
+  font-size: 2vw;
+  text-align: center;
+  font-weight: 100;
+}
+.col{
+  margin-right:10px;
+}
+.box span{
+  font-size: 20vh;
+}
+
 #page5 {
   height: 160px;
   width: 100%;
