@@ -244,12 +244,14 @@ body {
   color: rgb(34, 30, 30);
   font-weight: 100;
   padding: 10px 0;
+  cursor: grabbing;
 }
 #elem2 h6 {
   font-size: 19px;
   letter-spacing: -0.5px;
   font-weight:100;
   margin: 20px 0;
+  cursor: grabbing;
 }
 #elem2 h6 span{
   font-family:canopee;
@@ -549,18 +551,22 @@ body {
   transform: translateX(260%);
 }
 #page5 {
-  height: 120px;
+  height: 160px;
   width: 100%;
   background-color: #c4bcb3;
+  padding: 20px 30px;
+}
+#wrapped::-webkit-scrollbar {
+  display: none;
+}
+#page5 #wrapped{
+  padding: 20px;
   border-top: 1px solid #2f2f2f;
   border-bottom: 1px solid #2f2f2f;
-  padding: 30px 0;
   white-space: nowrap;
   overflow-x: auto;
   overflow-y: hidden;
-}
-#page5::-webkit-scrollbar {
-  display: none;
+
 }
 #page5 h1 {
   font-size: 70px;
@@ -568,18 +574,13 @@ body {
   font-weight: 100;
   display: inline-block;
   margin-right: 20px;
-  animation: scroll 20s linear infinite;
+  animation: scroll 8s linear infinite;
 }
 #page5 span {
   font-family: canopee;
   background-color: #2f2f2f;
   color: #c4bcb3;
   padding: 0 12px;
-}
-#page6 {
-  height: 100px;
-  width: 100%;
-  background-color: #c4bcb3;
 }
 
 @keyframes scroll {
@@ -593,4 +594,59 @@ body {
 
 #page5:hover h1 {
   animation-play-state: paused;
+}
+
+footer{
+  background-color: #c4bcb3;
+  display:flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 25px 30px;
+
+}
+
+footer #left{
+  display:flex;
+  justify-content: space-between;
+  align-items: center;
+  gap:1rem;
+}
+
+footer #left h5{
+  font-family: canopee;
+  font-size: 1.6vw;
+  font-weight: 100;
+}
+footer #left img{
+  height:30px;
+
+}
+footer #left p{
+  font-size: 1.5vw;
+  letter-spacing: -1px;
+  cursor: pointer;
+}
+
+footer #right{
+  display:flex;
+  justify-content: space-between;
+  align-items: center;
+  font-family: canopee;
+}
+
+footer #right ul{
+  display:flex;
+  gap: 25px;
+  font-size: 1.3rem;
+  cursor: pointer;
+}
+
+footer #right ul li:first-child{
+  list-style: none;
+}
+
+#foot-bottom{
+  height:1vh;
+  background-color:#c4bcb3;
+
 }
