@@ -690,3 +690,72 @@ footer #right ul li:first-child{
   background-color:#c4bcb3;
 
 }
+
+#page6{
+  background-color:#c4bcb3;
+  display: flex;
+  height: 105vh;
+  
+}
+#page6 #left{
+ width: 50%;
+ margin: 0 2vw;
+ /* margin-top:6vh; */
+ display: flex;
+ flex-direction: column;
+ gap:2rem;
+}
+#left-up{
+  display:flex;
+  align-items: center;
+  gap:2rem;
+}
+#left-up h1{
+  
+}
+
+#left-bottom{
+  margin-top: -12vh;
+}
+#page6 #left img{
+  height:40vh;
+  object-fit: cover;
+  width:14vw;
+  border: 1px solid black;
+}
+#page6 #left h1{
+  text-transform: capitalize;
+  font-family: canopee;
+  font-size: 29vw;
+}
+#page6 #right{
+  width: 50%;
+  margin-top:7.5vh;
+}
+#page6 #right img{
+  height:89.5%;
+  width:97%;
+  object-fit: cover;
+  border: 1px solid black;
+}
+#page7{
+  display:flex;
+  height:40vh;
+  background-color: #c4bcb3;
+  margin-top: -5vh;
+}
+#inner{
+  margin: 2vw 2vw;
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+}
+#inner img{
+  height:120%;
+  border:1px solid black;
+  object-fit: cover;
+}
+#inner h1{
+  font-family: canopee;
+  font-size: 25vw;
+}
