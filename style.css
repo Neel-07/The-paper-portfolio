@@ -759,3 +759,50 @@ footer #right ul li:first-child{
   font-family: canopee;
   font-size: 25vw;
 }
+
+#page8 {
+  padding: 20px;
+  position: relative;
+  height: 60vh;
+  background-color: #c4bcb3;
+  display:flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0.5rem;
+}
+#page8 h1 {
+  font-size: 26vw;
+  letter-spacing: -15px;
+  font-family: canopee;
+  font-weight: 100;
+  color: #c4bcb3;
+  line-height: 600px;
+  text-align: center;
+  padding: 0px 20px;
+}
+#page8 #head{
+  background-color: #1c1c19;
+  width:66%;
+  height:48vh;
+  display:flex;
+  justify-self:center;
+}
+#page8 #side-div{
+ display: flex;
+ flex-direction: column;
+ margin:2vw;
+}
+#page8 #side-div span{
+  text-decoration: underline;
+  text-underline-offset: 4px;
+  text-decoration-thickness: 1px;
+}
+#page8 #side-div p{
+ font-size: 2.3vw;
+ font-family: Domaine;
+}
+#page8 #side-div h2{
+ font-size: 7vw;
+ font-family: canopee;
+ text-align: left;
+}
