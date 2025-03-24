@@ -806,3 +806,16 @@ footer #right ul li:first-child{
  font-family: canopee;
  text-align: left;
 }
+
+@media (max-width:600px) {
+   #nav h5{
+    display: none;
+   }
+   #nav{
+    display:flex;
+    justify-content: flex-end;
+   }
+   #nav img{
+    width:50%;
+   }
+}
